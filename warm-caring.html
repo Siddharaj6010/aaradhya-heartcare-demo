@@ -29,7 +29,7 @@
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{font-family:var(--sans);color:var(--forest);background:var(--cream);font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  body{font-family:var(--sans);color:var(--forest);background:var(--cream);font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
   a{color:inherit;text-decoration:none}
   img{max-width:100%;display:block}
   .docphoto{width:100%;height:100%;object-fit:cover;object-position:50% 14%}
@@ -222,6 +222,8 @@
     footer .grid{grid-template-columns:1fr 1fr}
     .why{margin:0 8px;border-radius:32px}
     .mbar{display:flex}body{padding-bottom:66px}.topbar{display:none}
+    .nav-cta .btn-primary{display:none}
+    .about .visual .float{display:none}
   }
   @media(max-width:520px){footer .grid{grid-template-columns:1fr}}
 </style>
