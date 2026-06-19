@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aaradhya Heart Care — Dr. Sandarbh Patel, Interventional Cardiologist | Paldi, Ahmedabad</title>
+<meta name="description" content="Expert heart care in Paldi, Ahmedabad. Dr. Sandarbh Patel, Interventional Cardiologist (DM Cardiology, U.N. Mehta) — 18+ years, rated 5.0★ by patients.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0B2A4A;
+    --blue:#1E6FB5;
+    --blue-deep:#155089;
+    --sky:#E8F1F8;
+    --sky-soft:#F4F9FD;
+    --ink:#16222E;
+    --slate:#5A6B7B;
+    --line:#D9E4EF;
+    --pulse:#E5484D;
+    --white:#FFFFFF;
+    --gold:#C49A3F;
+    --serif:'Fraunces',Georgia,serif;
+    --sans:'Mulish',-apple-system,sans-serif;
+    --maxw:1180px;
+    --r:16px;
+    --shadow:0 18px 50px -24px rgba(11,42,74,.35);
+    --shadow-sm:0 8px 24px -16px rgba(11,42,74,.4);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:var(--white);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .gu body, html[lang="gu"] body{font-size:16.5px}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  section{position:relative}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacing:-.01em;color:var(--navy)}
+  .eyebrow{font-family:var(--sans);font-weight:700;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);display:inline-flex;align-items:center;gap:.55rem}
+  .eyebrow::before{content:"";width:26px;height:1.5px;background:var(--blue)}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--sans);font-weight:700;font-size:.97rem;padding:.85rem 1.5rem;border-radius:999px;border:1.5px solid transparent;cursor:pointer;transition:.25s ease;white-space:nowrap}
+  .btn-primary{background:var(--blue);color:#fff;box-shadow:0 12px 26px -12px rgba(30,111,181,.7)}
+  .btn-primary:hover{background:var(--blue-deep);transform:translateY(-2px)}
+  .btn-ghost{background:transparent;color:var(--navy);border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
+  .btn-call{background:var(--navy);color:#fff}
+  .btn-call:hover{background:#06203c;transform:translateY(-2px)}
+
+  /* ---------- Top bar ---------- */
+  .topbar{background:var(--navy);color:#cfe0f0;font-size:.83rem}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:.5rem 24px}
+  .topbar a{color:#cfe0f0;display:inline-flex;align-items:center;gap:.4rem}
+  .topbar a:hover{color:#fff}
+  .topbar .tb-right{display:flex;gap:18px;align-items:center}
+
+  /* ---------- Header ---------- */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 24px;max-width:var(--maxw);margin:0 auto}
+  .brand{display:flex;align-items:center;gap:.7rem}
+  .brand .mark{width:42px;height:42px;border-radius:11px;background:linear-gradient(150deg,var(--blue),var(--navy));display:grid;place-items:center;box-shadow:var(--shadow-sm)}
+  .brand .mark svg{width:24px;height:24px}
+  .brand .name{font-family:var(--serif);font-weight:600;font-size:1.28rem;color:var(--navy);line-height:1}
+  .brand .name small{display:block;font-family:var(--sans);font-weight:600;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-top:3px}
+  .navlinks{display:flex;gap:30px;align-items:center}
+  .navlinks a{font-weight:600;font-size:.95rem;color:var(--ink);position:relative;padding:4px 0}
+  .navlinks a::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--blue);transition:.25s}
+  .navlinks a:hover{color:var(--blue)}.navlinks a:hover::after{width:100%}
+  .nav-cta{display:flex;align-items:center;gap:12px}
+  .lang{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;overflow:hidden;font-weight:700;font-size:.8rem}
+  .lang button{padding:.4rem .7rem;background:transparent;border:0;cursor:pointer;color:var(--slate);font-family:var(--sans);font-weight:700}
+  .lang button.on{background:var(--blue);color:#fff}
+  .burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:6px}
+  .burger span{width:24px;height:2px;background:var(--navy);border-radius:2px;transition:.25s}
+
+  /* ---------- Hero ---------- */
+  .hero{background:
+      radial-gradient(900px 500px at 88% -10%,rgba(30,111,181,.10),transparent 60%),
+      linear-gradient(180deg,var(--sky-soft),var(--white));
+      overflow:hidden}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:54px;align-items:center;padding:64px 24px 76px}
+  .hero h1{font-size:clamp(2.3rem,4.6vw,3.55rem);margin:.6rem 0 .2rem}
+  .hero h1 .accent{color:var(--blue);font-style:italic}
+  .hero .sub{font-size:1.12rem;color:var(--slate);max-width:34ch;margin:1.1rem 0 1.7rem}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:1.8rem}
+  .hero-trust{display:flex;gap:26px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:1.2rem}
+  .hero-trust .t{display:flex;flex-direction:column}
+  .hero-trust .t b{font-family:var(--serif);font-size:1.5rem;color:var(--navy);font-weight:600}
+  .hero-trust .t span{font-size:.8rem;color:var(--slate);font-weight:600;letter-spacing:.02em}
+  .portrait{position:relative}
+  .portrait .card{background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}
+  .portrait .photo{height:330px;background:
+      radial-gradient(120% 120% at 50% 0,#dbeafa,#bcd6f2);
+      display:grid;place-items:center;position:relative}
+  .portrait .photo .mono{width:120px;height:120px;border-radius:50%;background:linear-gradient(150deg,var(--blue),var(--navy));display:grid;place-items:center;color:#fff;font-family:var(--serif);font-size:2.6rem;box-shadow:0 16px 30px -14px rgba(11,42,74,.6)}
+  .portrait .photo .ph-tag{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);font-size:.7rem;color:var(--blue-deep);background:rgba(255,255,255,.8);padding:3px 10px;border-radius:999px;font-weight:600}
+  .portrait .meta{padding:18px 22px}
+  .portrait .meta .nm{font-family:var(--serif);font-size:1.3rem;color:var(--navy);font-weight:600}
+  .portrait .meta .role{color:var(--blue);font-weight:700;font-size:.9rem;margin-top:2px}
+  .portrait .meta .creds{font-size:.82rem;color:var(--slate);margin-top:8px;line-height:1.5}
+  .portrait .badge{position:absolute;top:-16px;right:-12px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-sm);padding:10px 14px;display:flex;align-items:center;gap:8px}
+  .portrait .badge b{font-family:var(--serif);font-size:1.2rem;color:var(--navy)}
+  .portrait .badge .star{color:var(--gold)}
+  .ecg{height:46px;width:100%;color:var(--blue);opacity:.5}
+  .ecg path{stroke:currentColor;stroke-width:2;fill:none;stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 4.5s ease forwards 1}
+  @keyframes draw{to{stroke-dashoffset:0}}
+
+  /* ---------- Stat strip ---------- */
+  .stats{background:var(--navy);color:#fff}
+  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:38px 24px}
+  .stat{text-align:center;position:relative}
+  .stat:not(:last-child)::after{content:"";position:absolute;right:-10px;top:10%;height:80%;width:1px;background:rgba(255,255,255,.16)}
+  .stat b{font-family:var(--serif);font-size:2.3rem;font-weight:600;display:block;color:#fff}
+  .stat span{font-size:.82rem;color:#aecbe8;font-weight:600;letter-spacing:.03em}
+
+  /* ---------- Section frame ---------- */
+  .sec{padding:84px 0}
+  .sec-head{max-width:640px;margin-bottom:46px}
+  .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+  .sec-head h2{font-size:clamp(1.9rem,3.4vw,2.7rem);margin:.6rem 0 .5rem}
+  .sec-head p{color:var(--slate);font-size:1.05rem}
+
+  /* ---------- About ---------- */
+  .about{background:var(--sky-soft)}
+  .about .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:center}
+  .about .visual{position:relative}
+  .about .visual .frame{border-radius:24px;background:linear-gradient(160deg,#cfe2f6,#eaf3fc);height:420px;border:1px solid var(--line);display:grid;place-items:center;box-shadow:var(--shadow)}
+  .about .visual .frame .mono{width:130px;height:130px;border-radius:26px;background:linear-gradient(150deg,var(--blue),var(--navy));display:grid;place-items:center;color:#fff;font-family:var(--serif);font-size:2.8rem}
+  .about .visual .float{position:absolute;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-sm);padding:12px 16px;font-size:.85rem;font-weight:600}
+  .about .visual .float.f1{top:24px;left:-18px;color:var(--navy)}
+  .about .visual .float.f2{bottom:26px;right:-14px;color:var(--navy)}
+  .about .visual .float small{color:var(--slate);font-weight:600}
+  .credlist{display:grid;gap:14px;margin:24px 0 28px}
+  .credlist li{list-style:none;display:flex;gap:12px;align-items:flex-start}
+  .credlist .ic{flex:0 0 28px;height:28px;border-radius:8px;background:var(--sky);display:grid;place-items:center;color:var(--blue)}
+  .credlist b{color:var(--navy)}
+  .credlist span{color:var(--slate);font-size:.92rem}
+
+  /* ---------- Services ---------- */
+  .tabs{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:34px}
+  .tab{padding:.6rem 1.3rem;border-radius:999px;border:1.5px solid var(--line);background:#fff;font-weight:700;font-size:.92rem;color:var(--slate);cursor:pointer;transition:.2s}
+  .tab.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;transition:.25s;position:relative;overflow:hidden}
+  .card::before{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:linear-gradient(90deg,var(--blue),transparent);opacity:0;transition:.25s}
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#cfe0f0}
+  .card:hover::before{opacity:1}
+  .card .ic{width:48px;height:48px;border-radius:12px;background:var(--sky);display:grid;place-items:center;color:var(--blue);margin-bottom:14px}
+  .card h3{font-size:1.18rem;margin-bottom:7px}
+  .card p{color:var(--slate);font-size:.92rem}
+  .panel{display:none}.panel.on{display:block;animation:fade .4s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+  /* ---------- Why ---------- */
+  .why{background:var(--navy);color:#eaf2fb}
+  .why h2{color:#fff}
+  .why .sec-head p{color:#aecbe8}
+  .why .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .why .item{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:26px}
+  .why .item .ic{width:46px;height:46px;border-radius:12px;background:rgba(30,111,181,.25);display:grid;place-items:center;color:#8fc1ee;margin-bottom:14px}
+  .why .item h3{color:#fff;font-size:1.16rem;margin-bottom:7px}
+  .why .item p{color:#aecbe8;font-size:.9rem}
+
+  /* ---------- Reviews ---------- */
+  .reviews{background:var(--sky-soft)}
+  .rev-top{display:flex;align-items:center;gap:18px;justify-content:center;margin-bottom:36px;flex-wrap:wrap}
+  .gbadge{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 20px;box-shadow:var(--shadow-sm)}
+  .gbadge .score{font-family:var(--serif);font-size:2rem;color:var(--navy);line-height:1}
+  .gbadge .stars{color:var(--gold);font-size:1.1rem}
+  .gbadge small{color:var(--slate);font-weight:600}
+  .rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .quote{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;box-shadow:var(--shadow-sm)}
+  .quote .stars{color:var(--gold);margin-bottom:10px}
+  .quote p{font-size:.96rem;color:var(--ink);font-style:italic}
+  .quote .who{display:flex;align-items:center;gap:10px;margin-top:16px}
+  .quote .av{width:38px;height:38px;border-radius:50%;background:linear-gradient(150deg,var(--blue),var(--navy));color:#fff;display:grid;place-items:center;font-weight:700;font-size:.85rem;font-family:var(--serif)}
+  .quote .who b{font-size:.9rem;color:var(--navy)}
+  .quote .who span{font-size:.78rem;color:var(--slate);display:block}
+
+  /* ---------- Tips ---------- */
+  .tips .cards{grid-template-columns:repeat(3,1fr)}
+  .tip{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;transition:.25s}
+  .tip:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
+  .tip .top{height:120px;background:linear-gradient(150deg,var(--sky),#cfe2f6);display:grid;place-items:center;color:var(--blue)}
+  .tip .bd{padding:20px}
+  .tip .bd .tag{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+  .tip .bd h3{font-size:1.08rem;margin:8px 0 6px}
+  .tip .bd p{font-size:.88rem;color:var(--slate)}
+
+  /* ---------- Visit + Form ---------- */
+  .visit{background:var(--sky-soft)}
+  .visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+  .infoblock{display:grid;gap:18px}
+  .info{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+  .info .ic{flex:0 0 44px;height:44px;border-radius:11px;background:var(--sky);display:grid;place-items:center;color:var(--blue)}
+  .info b{color:var(--navy);font-size:1rem}
+  .info p{color:var(--slate);font-size:.92rem;margin-top:2px}
+  .emergency{background:linear-gradient(150deg,#fdeced,#fbe2e3);border:1px solid #f3c4c6;border-radius:14px;padding:18px;display:flex;gap:14px;align-items:center}
+  .emergency .ic{flex:0 0 44px;height:44px;border-radius:11px;background:var(--pulse);display:grid;place-items:center;color:#fff}
+  .emergency b{color:#9b1c20}.emergency p{color:#a23b3e;font-size:.9rem}
+  .map{margin-top:20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);height:230px;background:#dde9f3 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><rect width="40" height="40" fill="%23dde9f3"/><path d="M0 20h40M20 0v40" stroke="%23c3d6e8" stroke-width="1"/></svg>');display:grid;place-items:center;position:relative}
+  .map .pin{display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--navy);font-weight:700}
+  .map .pin .dot{width:18px;height:18px;border-radius:50%;background:var(--pulse);box-shadow:0 0 0 8px rgba(229,72,77,.18)}
+  form .field{margin-bottom:14px}
+  form label{font-weight:700;font-size:.82rem;color:var(--navy);display:block;margin-bottom:6px}
+  form input,form select,form textarea{width:100%;padding:.8rem 1rem;border:1.5px solid var(--line);border-radius:11px;font-family:var(--sans);font-size:.95rem;background:#fff;transition:.2s}
+  form input:focus,form select:focus,form textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 4px rgba(30,111,181,.12)}
+  .formcard{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;box-shadow:var(--shadow)}
+  .formcard h3{font-size:1.5rem;margin-bottom:6px}
+  .formcard .note{font-size:.82rem;color:var(--slate);margin-top:10px;text-align:center}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--navy);color:#aecbe8;padding:56px 0 30px}
+  footer .grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px}
+  footer h4{color:#fff;font-family:var(--serif);font-size:1.05rem;margin-bottom:14px;font-weight:600}
+  footer a{color:#aecbe8;display:block;padding:5px 0;font-size:.92rem}
+  footer a:hover{color:#fff}
+  footer .brand .name{color:#fff}
+  footer p.desc{font-size:.9rem;margin:14px 0;max-width:34ch}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.82rem;color:#7fa4c9}
+
+  /* ---------- Sticky mobile bar ---------- */
+  .mbar{position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;background:#fff;border-top:1px solid var(--line);box-shadow:0 -8px 24px -18px rgba(0,0,0,.4)}
+  .mbar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:10px 0;font-size:.72rem;font-weight:700;color:var(--navy)}
+  .mbar a.wa{color:#0c8a4d}.mbar a.bk{background:var(--blue);color:#fff;margin:6px;border-radius:10px;justify-content:center}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:900px){
+    .navlinks{display:none}
+    .burger{display:flex}
+    .hero .wrap{grid-template-columns:1fr;gap:40px;padding:40px 24px 56px}
+    .portrait{max-width:380px;margin:0 auto}
+    .stats .wrap{grid-template-columns:1fr 1fr;gap:28px 12px}
+    .stat:nth-child(2)::after{display:none}
+    .about .grid,.visit .grid{grid-template-columns:1fr;gap:34px}
+    .cards,.rgrid,.why .grid,.tips .cards{grid-template-columns:1fr}
+    .two{grid-template-columns:1fr}
+    footer .grid{grid-template-columns:1fr 1fr}
+    .mbar{display:flex}
+    body{padding-bottom:64px}
+    .topbar{display:none}
+  }
+  @media(max-width:520px){footer .grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="topbar">
+  <div class="wrap">
+    <a href="#"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg><span data-en="602, Merlin Pentagon, Mahalaxmi Five Road, Paldi, Ahmedabad" data-gu="૬૦૨, મર્લિન પેન્ટાગોન, મહાલક્ષ્મી ફાઈવ રોડ, પાલડી, અમદાવાદ">602, Merlin Pentagon, Mahalaxmi Five Road, Paldi, Ahmedabad</span></a>
+    <div class="tb-right">
+      <a href="#" data-en="Mon–Sat · 9:00 AM – 8:00 PM" data-gu="સોમ–શનિ · સવારે ૯ – રાત્રે ૮">Mon–Sat · 9:00 AM – 8:00 PM</a>
+      <a href="tel:+919909031385"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>+91 99090 31385</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <nav class="nav">
+    <a class="brand" href="#">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z" fill="rgba(255,255,255,.15)"/><path d="M7.5 11h2l1.2-2.2L13 13l1.3-2h2.2" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="name">Aaradhya<small>Heart Care</small></span>
+    </a>
+    <div class="navlinks">
+      <a href="#about" data-en="About" data-gu="ડૉક્ટર વિશે">About</a>
+      <a href="#services" data-en="Treatments" data-gu="સારવાર">Treatments</a>
+      <a href="#why" data-en="Why Us" data-gu="શા માટે અમે">Why Us</a>
+      <a href="#reviews" data-en="Reviews" data-gu="સમીક્ષાઓ">Reviews</a>
+      <a href="#visit" data-en="Visit" data-gu="મુલાકાત">Visit</a>
+    </div>
+    <div class="nav-cta">
+      <div class="lang">
+        <button class="on" data-lang="en">EN</button>
+        <button data-lang="gu">ગુ</button>
+      </div>
+      <a href="#book" class="btn btn-primary" data-en="Book Appointment" data-gu="એપોઇન્ટમેન્ટ">Book Appointment</a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow" data-en="Interventional Cardiology · Paldi, Ahmedabad" data-gu="ઇન્ટરવેન્શનલ કાર્ડિયોલોજી · પાલડી, અમદાવાદ">Interventional Cardiology · Paldi, Ahmedabad</span>
+      <h1><span data-en="Expert heart care," data-gu="નિષ્ણાત હૃદય સંભાળ,">Expert heart care,</span><br><span class="accent" data-en="close to your heart." data-gu="તમારા હૃદયની નજીક.">close to your heart.</span></h1>
+      <p class="sub" data-en="Trusted, personalised cardiac care from Dr. Sandarbh Patel — Interventional Cardiologist with 18+ years of experience, right here in Paldi." data-gu="ડૉ. સંદર્ભ પટેલ દ્વારા વિશ્વાસપાત્ર, વ્યક્તિગત હૃદય સંભાળ — ૧૮+ વર્ષના અનુભવ સાથે ઇન્ટરવેન્શનલ કાર્ડિયોલોજિસ્ટ, અહીં પાલડીમાં.">Trusted, personalised cardiac care from Dr. Sandarbh Patel — Interventional Cardiologist with 18+ years of experience, right here in Paldi.</p>
+      <div class="hero-cta">
+        <a href="#book" class="btn btn-primary" data-en="Book an Appointment" data-gu="એપોઇન્ટમેન્ટ બુક કરો">Book an Appointment</a>
+        <a href="tel:+919909031385" class="btn btn-ghost"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg><span data-en="Call Now" data-gu="કૉલ કરો">Call Now</span></a>
+      </div>
+      <div class="hero-trust">
+        <div class="t"><b>18+</b><span data-en="Years Experience" data-gu="વર્ષનો અનુભવ">Years Experience</span></div>
+        <div class="t"><b>5.0★</b><span data-en="Patient Rating" data-gu="દર્દી રેટિંગ">Patient Rating</span></div>
+        <div class="t"><b>DM</b><span data-en="Cardiology · U.N. Mehta" data-gu="કાર્ડિયોલોજી · યુ.એન. મહેતા">Cardiology · U.N. Mehta</span></div>
+      </div>
+    </div>
+    <div class="portrait">
+      <div class="badge"><span class="star">★</span><b>5.0</b><small style="color:var(--slate);font-weight:600">/ 5</small></div>
+      <div class="card">
+        <div class="photo">
+          <div class="mono">SP</div>
+          <span class="ph-tag" data-en="Dr. Sandarbh Patel — photo" data-gu="ડૉ. સંદર્ભ પટેલ — ફોટો">Dr. Sandarbh Patel — photo</span>
+        </div>
+        <div class="meta">
+          <div class="nm">Dr. Sandarbh Patel</div>
+          <div class="role" data-en="Interventional Cardiologist" data-gu="ઇન્ટરવેન્શનલ કાર્ડિયોલોજિસ્ટ">Interventional Cardiologist</div>
+          <div class="creds">MBBS · MD (Medicine) · DM Cardiology<br>Associate Fellow, European Society of Cardiology</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg class="ecg" viewBox="0 0 1440 46" preserveAspectRatio="none"><path d="M0 23 H300 l20 -16 l22 32 l24 -40 l20 24 H760 l18 -12 l20 24 l22 -30 l18 18 H1440"/></svg>
+</section>
+
+<!-- Stats -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stat"><b data-count="18" data-suffix="+">18+</b><span data-en="Years of Experience" data-gu="વર્ષનો અનુભવ">Years of Experience</span></div>
+    <div class="stat"><b>5.0★</b><span data-en="Average Patient Rating" data-gu="સરેરાશ દર્દી રેટિંગ">Average Patient Rating</span></div>
+    <div class="stat"><b data-count="40" data-suffix="+">40+</b><span data-en="5-Star Google Reviews" data-gu="5-સ્ટાર ગૂગલ સમીક્ષાઓ">5-Star Google Reviews</span></div>
+    <div class="stat"><b>DM</b><span data-en="Cardiology, U.N. Mehta Institute" data-gu="કાર્ડિયોલોજી, યુ.એન. મહેતા સંસ્થા">Cardiology, U.N. Mehta Institute</span></div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="sec about" id="about">
+  <div class="wrap">
+    <div class="grid">
+      <div class="visual reveal">
+        <div class="frame"><div class="mono">SP</div></div>
+        <div class="float f1"><span data-en="DM Cardiology" data-gu="ડીએમ કાર્ડિયોલોજી">DM Cardiology</span><br><small data-en="U.N. Mehta Institute" data-gu="યુ.એન. મહેતા સંસ્થા">U.N. Mehta Institute</small></div>
+        <div class="float f2"><span data-en="Associate Fellow" data-gu="એસોસિએટ ફેલો">Associate Fellow</span><br><small>European Society of Cardiology</small></div>
+      </div>
+      <div class="copy reveal">
+        <span class="eyebrow" data-en="About the Doctor" data-gu="ડૉક્ટર વિશે">About the Doctor</span>
+        <h2 data-en="Meet Dr. Sandarbh Patel" data-gu="ડૉ. સંદર્ભ પટેલને મળો">Meet Dr. Sandarbh Patel</h2>
+        <p style="color:var(--slate);margin:14px 0 4px" data-en="Dr. Sandarbh Patel is an interventional cardiologist with over 18 years of experience in diagnosing and treating heart disease. He completed his DM in Cardiology from the U.N. Mehta Institute of Cardiology — Gujarat's premier cardiac centre — and is an Associate Fellow of the European Society of Cardiology." data-gu="ડૉ. સંદર્ભ પટેલ ૧૮+ વર્ષના અનુભવ સાથે ઇન્ટરવેન્શનલ કાર્ડિયોલોજિસ્ટ છે. તેમણે ગુજરાતની અગ્રણી હૃદય સંસ્થા યુ.એન. મહેતા ઇન્સ્ટિટ્યૂટમાંથી કાર્ડિયોલોજીમાં ડીએમ પૂર્ણ કર્યું છે અને યુરોપિયન સોસાયટી ઓફ કાર્ડિયોલોજીના એસોસિએટ ફેલો છે.">Dr. Sandarbh Patel is an interventional cardiologist with over 18 years of experience in diagnosing and treating heart disease. He completed his DM in Cardiology from the U.N. Mehta Institute of Cardiology — Gujarat's premier cardiac centre — and is an Associate Fellow of the European Society of Cardiology.</p>
+        <ul class="credlist">
+          <li><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span><div><b data-en="MBBS · MD (General Medicine) · DM (Cardiology)" data-gu="એમબીબીએસ · એમડી (જનરલ મેડિસિન) · ડીએમ (કાર્ડિયોલોજી)">MBBS · MD (General Medicine) · DM (Cardiology)</b><br><span data-en="Silver Medallist in MD Medicine" data-gu="એમડી મેડિસિનમાં સિલ્વર મેડલિસ્ટ">Silver Medallist in MD Medicine</span></div></li>
+          <li><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 8 10 8 10s8-5 8-10V6z"/></svg></span><div><b data-en="18+ years in clinical & interventional cardiology" data-gu="ક્લિનિકલ અને ઇન્ટરવેન્શનલ કાર્ડિયોલોજીમાં ૧૮+ વર્ષ">18+ years in clinical & interventional cardiology</b><br><span data-en="Associated with Dr. Jivraj Mehta Hospital & AIMS Hospitals" data-gu="ડૉ. જીવરાજ મહેતા હોસ્પિટલ અને AIMS હોસ્પિટલ્સ સાથે સંકળાયેલ">Associated with Dr. Jivraj Mehta Hospital & AIMS Hospitals</span></div></li>
+          <li><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M9 14l-2 8 5-3 5 3-2-8"/></svg></span><div><b data-en="Angioplasty, angiography, pacemaker & device therapy" data-gu="એન્જિયોપ્લાસ્ટી, એન્જિયોગ્રાફી, પેસમેકર અને ડિવાઇસ થેરાપી">Angioplasty, angiography, pacemaker & device therapy</b><br><span data-en="Radial intervention specialist" data-gu="રેડિયલ ઇન્ટરવેન્શન નિષ્ણાત">Radial intervention specialist</span></div></li>
+        </ul>
+        <a href="#book" class="btn btn-primary" data-en="Book a Consultation" data-gu="પરામર્શ બુક કરો">Book a Consultation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow" style="justify-content:center" data-en="Our Care" data-gu="અમારી સંભાળ">Our Care</span>
+      <h2 data-en="Complete heart care, under one roof" data-gu="સંપૂર્ણ હૃદય સંભાળ, એક જ છત નીચે">Complete heart care, under one roof</h2>
+      <p data-en="From the first consultation to advanced procedures — clear diagnosis, honest advice and modern treatment." data-gu="પ્રથમ પરામર્શથી લઈને અદ્યતન પ્રક્રિયાઓ સુધી — સ્પષ્ટ નિદાન, પ્રામાણિક સલાહ અને આધુનિક સારવાર.">From the first consultation to advanced procedures — clear diagnosis, honest advice and modern treatment.</p>
+    </div>
+    <div class="tabs">
+      <button class="tab on" data-tab="cond" data-en="Conditions We Treat" data-gu="અમે સારવાર કરીએ છીએ">Conditions We Treat</button>
+      <button class="tab" data-tab="diag" data-en="Diagnostics" data-gu="નિદાન પરીક્ષણો">Diagnostics</button>
+      <button class="tab" data-tab="proc" data-en="Procedures" data-gu="પ્રક્રિયાઓ">Procedures</button>
+    </div>
+
+    <div class="panel on" data-panel="cond">
+      <div class="cards">
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></div><h3 data-en="Chest Pain & Angina" data-gu="છાતીમાં દુખાવો અને એન્જાઇના">Chest Pain & Angina</h3><p data-en="Evaluation of chest discomfort to rule out or treat heart-related causes." data-gu="હૃદય સંબંધિત કારણોને નકારી કાઢવા અથવા સારવાર માટે છાતીની તકલીફનું મૂલ્યાંકન.">Evaluation of chest discomfort to rule out or treat heart-related causes.</p></div>
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l2 6 4-12 2 6h6"/></svg></div><h3 data-en="Coronary Artery Disease" data-gu="કોરોનરી આર્ટરી રોગ">Coronary Artery Disease</h3><p data-en="Diagnosis and treatment of blocked or narrowed heart arteries." data-gu="હૃદયની અવરોધિત અથવા સાંકડી ધમનીઓનું નિદાન અને સારવાર.">Diagnosis and treatment of blocked or narrowed heart arteries.</p></div>
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg></div><h3 data-en="High Blood Pressure" data-gu="હાઈ બ્લડ પ્રેશર">High Blood Pressure</h3><p data-en="Long-term control of hypertension to protect your heart and kidneys." data-gu="તમારા હૃદય અને કિડનીની સુરક્ષા માટે હાયપરટેન્શનનું દીર્ઘકાલીન નિયંત્રણ.">Long-term control of hypertension to protect your heart and kidneys.</p></div>
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h3l2-5 3 10 2-7 2 4h4"/></svg></div><h3 data-en="Heart Failure" data-gu="હૃદય નિષ્ફળતા">Heart Failure</h3><p data-en="Management of a weak heart with medication and lifestyle care." data-gu="દવા અને જીવનશૈલીની સંભાળ સાથે નબળા હૃદયનું સંચાલન.">Management of a weak heart with medication and lifestyle care.</p></div>
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><h3 data-en="Arrhythmia" data-gu="અનિયમિત ધબકારા">Arrhythmia</h3><p data-en="Care for irregular, fast or slow heartbeats and palpitations." data-gu="અનિયમિત, ઝડપી અથવા ધીમા ધબકારા અને ધડકન માટેની સંભાળ.">Care for irregular, fast or slow heartbeats and palpitations.</p></div>
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11a8 8 0 0 1 16 0c0 6.5-8 11-8 11z"/><path d="M9 11l2 2 4-4"/></svg></div><h3 data-en="Preventive Cardiology" data-gu="નિવારક કાર્ડિયોલોજી">Preventive Cardiology</h3><p data-en="Cholesterol, diabetes & heart-risk checks to prevent future problems." data-gu="ભવિષ્યની સમસ્યાઓ અટકાવવા કોલેસ્ટ્રોલ, ડાયાબિટીસ અને હૃદય-જોખમ તપાસ.">Cholesterol, diabetes & heart-risk checks to prevent future problems.</p></div>
+      </div>
+    </div>
+
+    <div class="panel" data-panel="diag">
+      <div class="cards">
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l2 6 4-12 2 6h6"/></svg></div><h3>ECG</h3><p data-en="Quick recording of the heart's electrical activity." data-gu="હૃદયની વિદ્યુત પ્રવૃત્તિનું ઝડપી રેકોર્ડિંગ.">Quick recording of the heart's electrical activity.</p></div>
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3 data-en="2D Echocardiography" data-gu="2D ઇકોકાર્ડિયોગ્રાફી">2D Echocardiography</h3><p data-en="Ultrasound scan to see how your heart pumps and valves work." data-gu="તમારું હૃદય કેવી રીતે પંપ કરે છે તે જોવા માટે અલ્ટ્રાસાઉન્ડ સ્કેન.">Ultrasound scan to see how your heart pumps and valves work.</p></div>
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h5l2-7 4 14 2-7h7"/></svg></div><h3 data-en="TMT (Stress Test)" data-gu="TMT (સ્ટ્રેસ ટેસ્ટ)">TMT (Stress Test)</h3><p data-en="Treadmill test to check heart function during exercise." data-gu="કસરત દરમિયાન હૃદયની કામગીરી તપાસવા ટ્રેડમિલ ટેસ્ટ.">Treadmill test to check heart function during exercise.</p></div>
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12h2l1.5-3 2 6 1.5-3H18"/></svg></div><h3 data-en="Holter Monitoring" data-gu="હોલ્ટર મોનિટરિંગ">Holter Monitoring</h3><p data-en="24-hour heart-rhythm tracking for hard-to-catch symptoms." data-gu="પકડવા મુશ્કેલ લક્ષણો માટે ૨૪-કલાક હૃદય-લય ટ્રેકિંગ.">24-hour heart-rhythm tracking for hard-to-catch symptoms.</p></div>
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2 2"/></svg></div><h3 data-en="Cardiac Consultation" data-gu="હૃદય પરામર્શ">Cardiac Consultation</h3><p data-en="Detailed assessment, diagnosis and a clear treatment plan." data-gu="વિગતવાર મૂલ્યાંકન, નિદાન અને સ્પષ્ટ સારવાર યોજના.">Detailed assessment, diagnosis and a clear treatment plan.</p></div>
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.5-1.5 3-3.5 3-5.5A4.5 4.5 0 0 0 12 5 4.5 4.5 0 0 0 2 8.5C2 13 12 21 12 21s4-3 7-7z"/></svg></div><h3 data-en="Cardiac Health Packages" data-gu="હૃદય આરોગ્ય પેકેજ">Cardiac Health Packages</h3><p data-en="Bundled heart check-ups for early detection and peace of mind." data-gu="વહેલી તપાસ અને માનસિક શાંતિ માટે સંયુક્ત હૃદય ચેક-અપ.">Bundled heart check-ups for early detection and peace of mind.</p></div>
+      </div>
+    </div>
+
+    <div class="panel" data-panel="proc">
+      <div class="cards">
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l2 6 4-12 2 6h6"/></svg></div><h3 data-en="Coronary Angiography" data-gu="કોરોનરી એન્જિયોગ્રાફી">Coronary Angiography</h3><p data-en="Imaging to find blockages in the heart's arteries." data-gu="હૃદયની ધમનીઓમાં અવરોધ શોધવા માટે ઇમેજિંગ.">Imaging to find blockages in the heart's arteries.</p></div>
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11a8 8 0 0 1 16 0c0 6.5-8 11-8 11z"/></svg></div><h3 data-en="Angioplasty & Stenting" data-gu="એન્જિયોપ્લાસ્ટી અને સ્ટેન્ટિંગ">Angioplasty & Stenting</h3><p data-en="Opening blocked arteries (PTCA) to restore blood flow." data-gu="રક્ત પ્રવાહ પુનઃસ્થાપિત કરવા અવરોધિત ધમનીઓ ખોલવી (PTCA).">Opening blocked arteries (PTCA) to restore blood flow.</p></div>
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="3" width="12" height="18" rx="3"/><path d="M9 9h6M12 9v6"/></svg></div><h3 data-en="Pacemaker Implantation" data-gu="પેસમેકર ઇમ્પ્લાન્ટેશન">Pacemaker Implantation</h3><p data-en="Devices to keep slow or irregular heartbeats steady." data-gu="ધીમા અથવા અનિયમિત ધબકારાને સ્થિર રાખવા માટેના ઉપકરણો.">Devices to keep slow or irregular heartbeats steady.</p></div>
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><h3 data-en="Device Therapy (AICD/CRT)" data-gu="ડિવાઇસ થેરાપી (AICD/CRT)">Device Therapy (AICD/CRT)</h3><p data-en="Advanced implants for dangerous rhythms and heart failure." data-gu="જોખમી લય અને હૃદય નિષ્ફળતા માટે અદ્યતન ઇમ્પ્લાન્ટ.">Advanced implants for dangerous rhythms and heart failure.</p></div>
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/></svg></div><h3 data-en="Radial Intervention" data-gu="રેડિયલ ઇન્ટરવેન્શન">Radial Intervention</h3><p data-en="Wrist-route procedures — less pain, faster recovery." data-gu="કાંડા-માર્ગ પ્રક્રિયાઓ — ઓછો દુખાવો, ઝડપી રિકવરી.">Wrist-route procedures — less pain, faster recovery.</p></div>
+        <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11a8 8 0 0 1 16 0c0 6.5-8 11-8 11z"/><path d="M9 11h6"/></svg></div><h3 data-en="Balloon Valvuloplasty" data-gu="બલૂન વાલ્વ્યુલોપ્લાસ્ટી">Balloon Valvuloplasty</h3><p data-en="Widening narrowed heart valves without open surgery." data-gu="ઓપન સર્જરી વિના સાંકડા હૃદય વાલ્વને પહોળા કરવા.">Widening narrowed heart valves without open surgery.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why -->
+<section class="sec why" id="why">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow" style="justify-content:center;color:#8fc1ee" data-en="Why Aaradhya" data-gu="શા માટે આરાધ્ય">Why Aaradhya</span>
+      <h2 data-en="Reasons patients trust us with their hearts" data-gu="દર્દીઓ તેમના હૃદય માટે અમારા પર વિશ્વાસ કેમ રાખે છે">Reasons patients trust us with their hearts</h2>
+    </div>
+    <div class="grid">
+      <div class="item reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 8 10 8 10s8-5 8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3 data-en="Senior, qualified specialist" data-gu="વરિષ્ઠ, લાયકાત ધરાવતા નિષ્ણાત">Senior, qualified specialist</h3><p data-en="A DM cardiologist from U.N. Mehta with 18+ years and a European fellowship." data-gu="યુ.એન. મહેતામાંથી ડીએમ કાર્ડિયોલોજિસ્ટ, ૧૮+ વર્ષ અને યુરોપિયન ફેલોશિપ સાથે.">A DM cardiologist from U.N. Mehta with 18+ years and a European fellowship.</p></div>
+      <div class="item reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div><h3 data-en="Personal, unhurried care" data-gu="વ્યક્તિગત, ધીરજપૂર્વકની સંભાળ">Personal, unhurried care</h3><p data-en="Time to listen, explain your reports clearly and answer every question." data-gu="સાંભળવા, તમારા રિપોર્ટ સ્પષ્ટ સમજાવવા અને દરેક પ્રશ્નનો જવાબ આપવા માટેનો સમય.">Time to listen, explain your reports clearly and answer every question.</p></div>
+      <div class="item reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 11l2 2 3-4 2 3h2"/></svg></div><h3 data-en="Modern diagnostics" data-gu="આધુનિક નિદાન">Modern diagnostics</h3><p data-en="ECG, Echo and TMT on site for quick, accurate answers." data-gu="ઝડપી, ચોક્કસ જવાબો માટે સ્થળ પર ECG, ઇકો અને TMT.">ECG, Echo and TMT on site for quick, accurate answers.</p></div>
+      <div class="item reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h12"/></svg></div><h3 data-en="Honest, transparent advice" data-gu="પ્રામાણિક, પારદર્શક સલાહ">Honest, transparent advice</h3><p data-en="Treatment only when needed — clear guidance you can trust." data-gu="જરૂર હોય ત્યારે જ સારવાર — સ્પષ્ટ માર્ગદર્શન જેના પર તમે વિશ્વાસ કરી શકો.">Treatment only when needed — clear guidance you can trust.</p></div>
+      <div class="item reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div><h3 data-en="Convenient Paldi location" data-gu="અનુકૂળ પાલડી સ્થાન">Convenient Paldi location</h3><p data-en="Easy to reach at Mahalaxmi Five Road, with parking nearby." data-gu="મહાલક્ષ્મી ફાઈવ રોડ પર સરળતાથી પહોંચી શકાય, નજીકમાં પાર્કિંગ સાથે.">Easy to reach at Mahalaxmi Five Road, with parking nearby.</p></div>
+      <div class="item reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h12M3 10h12M3 15h8"/><path d="M17 8l3 3-3 3"/></svg></div><h3 data-en="Care in your language" data-gu="તમારી ભાષામાં સંભાળ">Care in your language</h3><p data-en="Consultations in Gujarati, Hindi and English — explained simply." data-gu="ગુજરાતી, હિન્દી અને અંગ્રેજીમાં પરામર્શ — સરળતાથી સમજાવેલ.">Consultations in Gujarati, Hindi and English — explained simply.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="sec reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow" style="justify-content:center" data-en="Patient Voices" data-gu="દર્દીઓના અવાજ">Patient Voices</span>
+      <h2 data-en="Rated a perfect 5.0 by patients in Ahmedabad" data-gu="અમદાવાદના દર્દીઓ દ્વારા સંપૂર્ણ 5.0 રેટિંગ">Rated a perfect 5.0 by patients in Ahmedabad</h2>
+    </div>
+    <div class="rev-top">
+      <div class="gbadge">
+        <svg width="28" height="28" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.5 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.9a5 5 0 0 1-2.2 3.3v2.7h3.5c2-1.9 3.3-4.7 3.3-7.8z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.7l-3.5-2.7c-1 .7-2.3 1.1-3.8 1.1-2.9 0-5.4-2-6.3-4.6H2v2.8A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.7 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2a11 11 0 0 0 0 9.8z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3 .6 4.2 1.6l3.1-3.1A11 11 0 0 0 2 7.1l3.7 2.8C6.6 7.4 9.1 5.4 12 5.4z"/></svg>
+        <div><div class="score">5.0 <span class="stars">★★★★★</span></div><small data-en="Rated 5.0 across 40+ Google reviews" data-gu="40+ ગૂગલ સમીક્ષાઓમાં 5.0 રેટિંગ">Rated 5.0 across 40+ Google reviews</small></div>
+      </div>
+    </div>
+    <div class="rgrid">
+      <div class="quote reveal"><div class="stars">★★★★★</div><p data-en="“My grandfather had a heart attack and Dr. Sandarbh Patel did an emergency angioplasty — he was fine within 3 hours. Excellent, very knowledgeable and a good human being. Best cardiologist in Ahmedabad.”" data-gu="“મારા દાદાને હાર્ટ એટેક આવ્યો અને ડૉ. સંદર્ભ પટેલે ઇમરજન્સી એન્જિયોપ્લાસ્ટી કરી — તેઓ ૩ કલાકમાં સ્વસ્થ થઈ ગયા. ઉત્તમ, ખૂબ જ જાણકાર અને સારા માણસ. અમદાવાદના શ્રેષ્ઠ કાર્ડિયોલોજિસ્ટ.”">“My grandfather had a heart attack and Dr. Sandarbh Patel did an emergency angioplasty — he was fine within 3 hours. Excellent, very knowledgeable and a good human being. Best cardiologist in Ahmedabad.”</p><div class="who"><span class="av">DG</span><div><b>Dhaval Gupta</b><span data-en="Local Guide · Google review" data-gu="લોકલ ગાઈડ · ગૂગલ સમીક્ષા">Local Guide · Google review</span></div></div></div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p data-en="“Experienced, well qualified and with deep knowledge of cardiac matters. I really appreciate his immediate response on WhatsApp whenever we need help. Friendly behaviour is an added qualification.”" data-gu="“અનુભવી, ઉચ્ચ લાયકાત ધરાવતા અને કાર્ડિયાક બાબતોનું ઊંડું જ્ઞાન. જ્યારે પણ મદદ જોઈએ ત્યારે વોટ્સએપ પર તેમનો તાત્કાલિક પ્રતિસાદ ખરેખર પ્રશંસનીય છે. મૈત્રીપૂર્ણ વર્તન એક વધારાની લાયકાત છે.”">“Experienced, well qualified and with deep knowledge of cardiac matters. I really appreciate his immediate response on WhatsApp whenever we need help. Friendly behaviour is an added qualification.”</p><div class="who"><span class="av">VS</span><div><b>Vikram Solanki</b><span data-en="Patient · Google review" data-gu="દર્દી · ગૂગલ સમીક્ષા">Patient · Google review</span></div></div></div>
+      <div class="quote reveal"><div class="stars">★★★★★</div><p data-en="“I recommend Dr. Sandarbh Patel to every heart patient. He is very kind hearted and helped us in a real emergency. We are grateful for his care.”" data-gu="“હું દરેક હૃદય દર્દીને ડૉ. સંદર્ભ પટેલની ભલામણ કરું છું. તેઓ ખૂબ જ દયાળુ છે અને તેમણે અમને ખરી કટોકટીમાં મદદ કરી. તેમની સંભાળ માટે અમે આભારી છીએ.”">“I recommend Dr. Sandarbh Patel to every heart patient. He is very kind hearted and helped us in a real emergency. We are grateful for his care.”</p><div class="who"><span class="av">PP</span><div><b>Pooja Pandya</b><span data-en="Patient's family · Google review" data-gu="દર્દીનો પરિવાર · ગૂગલ સમીક્ષા">Patient's family · Google review</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Tips -->
+<section class="sec tips" id="tips">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-en="Heart Health" data-gu="હૃદય આરોગ્ય">Heart Health</span>
+      <h2 data-en="Simple advice for a healthier heart" data-gu="સ્વસ્થ હૃદય માટે સરળ સલાહ">Simple advice for a healthier heart</h2>
+    </div>
+    <div class="cards">
+      <div class="tip reveal"><div class="top"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s-8-4.5-8-11a8 8 0 0 1 16 0c0 6.5-8 11-8 11z"/><path d="M8 11h2l1-2 2 4 1-2h2"/></svg></div><div class="bd"><span class="tag" data-en="Emergency" data-gu="કટોકટી">Emergency</span><h3 data-en="When chest pain is an emergency" data-gu="છાતીનો દુખાવો ક્યારે કટોકટી છે">When chest pain is an emergency</h3><p data-en="The warning signs of a heart attack and what to do in the first minutes." data-gu="હાર્ટ એટેકના ચેતવણી સંકેતો અને પ્રથમ મિનિટોમાં શું કરવું.">The warning signs of a heart attack and what to do in the first minutes.</p></div></div>
+      <div class="tip reveal"><div class="top"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div class="bd"><span class="tag" data-en="Lifestyle" data-gu="જીવનશૈલી">Lifestyle</span><h3 data-en="Keeping blood pressure in check" data-gu="બ્લડ પ્રેશર નિયંત્રણમાં રાખવું">Keeping blood pressure in check</h3><p data-en="Everyday habits that lower BP and protect your heart over time." data-gu="રોજિંદી આદતો જે BP ઘટાડે છે અને સમય સાથે તમારા હૃદયનું રક્ષણ કરે છે.">Everyday habits that lower BP and protect your heart over time.</p></div></div>
+      <div class="tip reveal"><div class="top"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h18M12 3v18"/><circle cx="12" cy="12" r="9"/></svg></div><div class="bd"><span class="tag" data-en="Diet" data-gu="આહાર">Diet</span><h3 data-en="A heart-healthy Gujarati thali" data-gu="હૃદય-સ્વસ્થ ગુજરાતી થાળી">A heart-healthy Gujarati thali</h3><p data-en="Small swaps in everyday meals that make a big difference to your heart." data-gu="રોજિંદા ભોજનમાં નાના ફેરફારો જે તમારા હૃદય માટે મોટો ફરક પાડે છે.">Small swaps in everyday meals that make a big difference to your heart.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Visit + Book -->
+<section class="sec visit" id="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" data-en="Visit Us" data-gu="અમારી મુલાકાત લો">Visit Us</span>
+      <h2 data-en="Find us in the heart of Paldi" data-gu="પાલડીના કેન્દ્રમાં અમને શોધો">Find us in the heart of Paldi</h2>
+    </div>
+    <div class="grid">
+      <div>
+        <div class="infoblock">
+          <div class="info"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div><div><b data-en="Clinic Address" data-gu="ક્લિનિક સરનામું">Clinic Address</b><p data-en="602, 6th Floor, Merlin Pentagon, Mahalaxmi Five Road, Paldi, Ahmedabad – 380007" data-gu="૬૦૨, ૬ઠ્ઠો માળ, મર્લિન પેન્ટાગોન, મહાલક્ષ્મી ફાઈવ રોડ, પાલડી, અમદાવાદ – ૩૮૦૦૦૭">602, 6th Floor, Merlin Pentagon, Mahalaxmi Five Road, Paldi, Ahmedabad – 380007</p></div></div>
+          <div class="info"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><b data-en="Working Hours" data-gu="કામકાજનો સમય">Working Hours</b><p data-en="Monday – Saturday · 9:00 AM – 8:00 PM (Sunday by appointment)" data-gu="સોમવાર – શનિવાર · સવારે ૯ – રાત્રે ૮ (રવિવાર એપોઇન્ટમેન્ટ દ્વારા)">Monday – Saturday · 9:00 AM – 8:00 PM (Sunday by appointment)</p></div></div>
+          <div class="info"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></div><div><b data-en="Call / WhatsApp" data-gu="કૉલ / વોટ્સએપ">Call / WhatsApp</b><p>+91 99090 31385</p></div></div>
+          <div class="emergency"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg></div><div><b data-en="Chest pain or emergency?" data-gu="છાતીમાં દુખાવો કે કટોકટી?">Chest pain or emergency?</b><p data-en="Call 108 for an ambulance immediately, then reach us." data-gu="તરત જ એમ્બ્યુલન્સ માટે ૧૦૮ પર કૉલ કરો, પછી અમારો સંપર્ક કરો.">Call 108 for an ambulance immediately, then reach us.</p></div></div>
+        </div>
+        <div class="map"><div class="pin"><span class="dot"></span><span data-en="Merlin Pentagon, Paldi" data-gu="મર્લિન પેન્ટાગોન, પાલડી">Merlin Pentagon, Paldi</span></div></div>
+      </div>
+      <div class="formcard" id="book">
+        <h3 data-en="Book an Appointment" data-gu="એપોઇન્ટમેન્ટ બુક કરો">Book an Appointment</h3>
+        <p style="color:var(--slate);font-size:.92rem;margin-bottom:18px" data-en="Fill in your details and we'll confirm your slot on call or WhatsApp." data-gu="તમારી વિગતો ભરો અને અમે કૉલ અથવા વોટ્સએપ પર તમારો સ્લોટ કન્ફર્મ કરીશું.">Fill in your details and we'll confirm your slot on call or WhatsApp.</p>
+        <form onsubmit="event.preventDefault();this.querySelector('.note').textContent= (document.documentElement.lang==='gu'?'આભાર! આ એક ડેમો ફોર્મ છે.':'Thank you! This is a demo form for the mockup.');">
+          <div class="two">
+            <div class="field"><label data-en="Full Name" data-gu="પૂરું નામ">Full Name</label><input type="text" required placeholder="—"></div>
+            <div class="field"><label data-en="Mobile Number" data-gu="મોબાઈલ નંબર">Mobile Number</label><input type="tel" required placeholder="+91"></div>
+          </div>
+          <div class="field"><label data-en="Reason for Visit" data-gu="મુલાકાતનું કારણ">Reason for Visit</label>
+            <select><option data-en="General heart consultation" data-gu="સામાન્ય હૃદય પરામર્શ">General heart consultation</option><option data-en="Chest pain / discomfort" data-gu="છાતીમાં દુખાવો / તકલીફ">Chest pain / discomfort</option><option data-en="Blood pressure / cholesterol" data-gu="બ્લડ પ્રેશર / કોલેસ્ટ્રોલ">Blood pressure / cholesterol</option><option data-en="Follow-up / second opinion" data-gu="ફોલો-અપ / બીજો અભિપ્રાય">Follow-up / second opinion</option><option data-en="Test report review (ECG/Echo/TMT)" data-gu="ટેસ્ટ રિપોર્ટ સમીક્ષા (ECG/ઇકો/TMT)">Test report review (ECG/Echo/TMT)</option></select>
+          </div>
+          <div class="field"><label data-en="Preferred Day / Time" data-gu="પસંદગીનો દિવસ / સમય">Preferred Day / Time</label><input type="text" placeholder="—"></div>
+          <button class="btn btn-primary" style="width:100%;justify-content:center" data-en="Request Appointment" data-gu="એપોઇન્ટમેન્ટ માટે વિનંતી">Request Appointment</button>
+          <p class="note"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <a class="brand" href="#" style="margin-bottom:6px">
+          <span class="mark"><svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z" fill="rgba(255,255,255,.15)" stroke="#fff" stroke-width="2"/><path d="M7.5 11h2l1.2-2.2L13 13l1.3-2h2.2" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="name">Aaradhya<small>Heart Care</small></span>
+        </a>
+        <p class="desc" data-en="Trusted interventional cardiology care in Paldi, Ahmedabad — led by Dr. Sandarbh Patel." data-gu="પાલડી, અમદાવાદમાં વિશ્વાસપાત્ર ઇન્ટરવેન્શનલ કાર્ડિયોલોજી સંભાળ — ડૉ. સંદર્ભ પટેલ દ્વારા.">Trusted interventional cardiology care in Paldi, Ahmedabad — led by Dr. Sandarbh Patel.</p>
+      </div>
+      <div><h4 data-en="Care" data-gu="સંભાળ">Care</h4>
+        <a href="#services" data-en="Conditions Treated" data-gu="સારવાર કરાતી સ્થિતિઓ">Conditions Treated</a>
+        <a href="#services" data-en="Diagnostics" data-gu="નિદાન">Diagnostics</a>
+        <a href="#services" data-en="Procedures" data-gu="પ્રક્રિયાઓ">Procedures</a>
+        <a href="#tips" data-en="Heart Health Tips" data-gu="હૃદય આરોગ્ય ટિપ્સ">Heart Health Tips</a>
+      </div>
+      <div><h4 data-en="Clinic" data-gu="ક્લિનિક">Clinic</h4>
+        <a href="#about" data-en="About the Doctor" data-gu="ડૉક્ટર વિશે">About the Doctor</a>
+        <a href="#reviews" data-en="Patient Reviews" data-gu="દર્દી સમીક્ષાઓ">Patient Reviews</a>
+        <a href="#visit" data-en="Visit & Hours" data-gu="મુલાકાત અને સમય">Visit & Hours</a>
+        <a href="#book" data-en="Book Appointment" data-gu="એપોઇન્ટમેન્ટ બુક કરો">Book Appointment</a>
+      </div>
+      <div><h4 data-en="Reach Us" data-gu="અમારો સંપર્ક">Reach Us</h4>
+        <a href="tel:+919909031385">+91 99090 31385</a>
+        <a href="#" data-en="602, Merlin Pentagon, Paldi" data-gu="૬૦૨, મર્લિન પેન્ટાગોન, પાલડી">602, Merlin Pentagon, Paldi</a>
+        <a href="#" data-en="Ahmedabad – 380007" data-gu="અમદાવાદ – ૩૮૦૦૦૭">Ahmedabad – 380007</a>
+        <a href="#" data-en="Mon–Sat · 9 AM – 8 PM" data-gu="સોમ–શનિ · સવારે ૯ – રાત્રે ૮">Mon–Sat · 9 AM – 8 PM</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Aaradhya Heart Care · <span data-en="All rights reserved" data-gu="સર્વ હક્ક અમલમાં">All rights reserved</span></span>
+      <span data-en="Mockup · Style A — Clinical Trust" data-gu="મોકઅપ · શૈલી A — ક્લિનિકલ ટ્રસ્ટ">Mockup · Style A — Clinical Trust</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile bar -->
+<div class="mbar">
+  <a href="tel:+919909031385"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg><span data-en="Call" data-gu="કૉલ">Call</span></a>
+  <a class="wa" href="https://wa.me/919909031385"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.107z"/></svg><span data-en="WhatsApp" data-gu="વોટ્સએપ">WhatsApp</span></a>
+  <a class="bk" href="#book"><span data-en="Book Appointment" data-gu="એપોઇન્ટમેન્ટ બુક કરો">Book Appointment</span></a>
+</div>
+
+<script>
+  // Language toggle
+  const langButtons=document.querySelectorAll('.lang button');
+  function setLang(l){
+    document.documentElement.lang=l;
+    document.querySelectorAll('[data-en]').forEach(el=>{
+      const v=el.getAttribute('data-'+l);
+      if(v!==null) el.textContent=v;
+    });
+    langButtons.forEach(b=>b.classList.toggle('on',b.dataset.lang===l));
+  }
+  langButtons.forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+
+  // Service tabs
+  document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+    t.classList.add('on');
+    document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.dataset.panel===t.dataset.tab));
+  }));
+
+  // Mobile nav
+  document.querySelector('.burger').addEventListener('click',()=>{
+    const n=document.querySelector('.navlinks');
+    const open=n.style.display==='flex';
+    n.style.display=open?'':'flex';
+    if(!open){n.style.position='absolute';n.style.top='64px';n.style.left='0';n.style.right='0';n.style.flexDirection='column';n.style.background='#fff';n.style.padding='18px 24px';n.style.borderBottom='1px solid var(--line)';n.style.gap='14px';n.style.boxShadow='var(--shadow)';}
+  });
+
+  // Reveal on scroll + counters
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  const co=new IntersectionObserver((es)=>{es.forEach(e=>{
+    if(e.isIntersecting){const el=e.target;const end=+el.dataset.count;const suf=el.dataset.suffix||'';let n=0;const step=Math.max(1,Math.round(end/40));
+      const t=setInterval(()=>{n+=step;if(n>=end){n=end;clearInterval(t);}el.textContent=n+suf;},28);co.unobserve(el);}})},{threshold:.5});
+  document.querySelectorAll('[data-count]').forEach(el=>co.observe(el));
+</script>
+</body>
+</html>

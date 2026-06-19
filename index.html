@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aaradhya Heart Care — Website Concepts | Dr. Sandarbh Patel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0B2A4A;--blue:#1E6FB5;--ink:#16222E;--slate:#5A6B7B;--line:#E2E9F1;--bg:#F4F8FC;--serif:'Fraunces',serif;--sans:'Mulish',sans-serif}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  header{padding:54px 0 30px;text-align:center;background:radial-gradient(800px 360px at 50% -10%,rgba(30,111,181,.10),transparent 60%)}
+  .kicker{font-weight:800;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--blue)}
+  h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,4.5vw,3.1rem);color:var(--navy);margin:.5rem 0 .4rem;letter-spacing:-.01em}
+  header p{color:var(--slate);max-width:60ch;margin:0 auto;font-size:1.08rem}
+  .meta-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+  .pill{background:#fff;border:1px solid var(--line);border-radius:999px;padding:.5rem 1rem;font-size:.85rem;font-weight:700;color:var(--navy);display:inline-flex;gap:.5rem;align-items:center}
+  .pill .s{color:#C49A3F}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:38px 0}
+  .card{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:.25s;box-shadow:0 18px 50px -34px rgba(11,42,74,.4)}
+  .card:hover{transform:translateY(-6px);box-shadow:0 26px 60px -30px rgba(11,42,74,.5)}
+  .swatch{height:120px;position:relative;display:flex;align-items:flex-end;padding:14px}
+  .swatch span{font-family:var(--serif);font-size:1.05rem;color:#fff;font-weight:600;position:relative;z-index:1}
+  .swA{background:linear-gradient(135deg,#0B2A4A,#1E6FB5)}
+  .swB{background:linear-gradient(135deg,#0E8A7D,#F26A4F)}
+  .swC{background:linear-gradient(135deg,#0A0D14,#FF4D5E)}
+  .swatch .tag{position:absolute;top:12px;left:14px;font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85)}
+  .card .bd{padding:20px 20px 22px;flex:1;display:flex;flex-direction:column}
+  .card h3{font-family:var(--serif);font-size:1.3rem;color:var(--navy);font-weight:600;margin-bottom:6px}
+  .card .desc{color:var(--slate);font-size:.92rem;flex:1}
+  .card .best{font-size:.8rem;color:var(--navy);background:var(--bg);border-radius:10px;padding:10px 12px;margin:14px 0;font-weight:600}
+  .card .best b{color:var(--blue)}
+  .open{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--blue);color:#fff;font-weight:800;padding:.8rem 1rem;border-radius:11px;transition:.2s}
+  .open:hover{background:#155089}
+  .shared{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;margin-bottom:40px}
+  .shared h2{font-family:var(--serif);font-size:1.5rem;color:var(--navy);font-weight:600;margin-bottom:6px}
+  .shared>p{color:var(--slate);margin-bottom:18px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .grid2 h4{color:var(--navy);font-size:.95rem;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+  ul{list-style:none}
+  li{padding:6px 0 6px 26px;position:relative;color:var(--ink);font-size:.93rem}
+  li::before{content:"";position:absolute;left:0;top:13px;width:14px;height:2px;background:var(--blue)}
+  li.x::before{background:#27AE60;width:8px;height:8px;border-radius:50%;top:11px;left:3px}
+  .note{background:#FFF8EC;border:1px solid #F0E0BE;border-radius:14px;padding:18px 20px;color:#7a5a17;font-size:.9rem;margin-bottom:40px}
+  .note b{color:#5e4410}
+  footer{text-align:center;color:var(--slate);font-size:.85rem;padding:10px 0 50px}
+  @media(max-width:820px){.cards{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker">Website Concepts · Pitch Preview</div>
+    <h1>Aaradhya Heart Care</h1>
+    <p>Three homepage directions for <b>Dr. Sandarbh Patel</b>, Interventional Cardiologist, Paldi — Ahmedabad. Same content and structure, three distinct looks. Open each, try the <b>EN / ગુજરાતી</b> toggle, and resize to see the mobile experience.</p>
+    <div class="meta-row">
+      <span class="pill"><span class="s">★</span> 5.0 Google rating</span>
+      <span class="pill">18+ years experience</span>
+      <span class="pill">DM Cardiology · U.N. Mehta</span>
+      <span class="pill">English + Gujarati</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="cards">
+    <div class="card">
+      <div class="swatch swA"><span class="tag">Option A</span><span>Clinical Trust</span></div>
+      <div class="bd">
+        <h3>Clinical Trust</h3>
+        <p class="desc">Refined, editorial-clinical. Calm navy &amp; clinical blue, elegant serif headings, a hairline ECG motif and lots of whitespace. The classic, instantly-credible choice.</p>
+        <div class="best"><b>Best for:</b> projecting authority and reassurance — the safe, polished pick.</div>
+        <a class="open" href="clinical-trust.html">Open Option A →</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="swatch swB"><span class="tag">Option B</span><span>Warm &amp; Caring</span></div>
+      <div class="bd">
+        <h3>Warm &amp; Caring</h3>
+        <p class="desc">Human and reassuring. Healing teal, warm cream and a coral heart accent, rounded organic shapes and larger, easy-to-read type for older patients.</p>
+        <div class="best"><b>Best for:</b> easing patient anxiety; the most approachable &amp; accessible.</div>
+        <a class="open" href="warm-caring.html">Open Option B →</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="swatch swC"><span class="tag">Option C</span><span>Modern Premium</span></div>
+      <div class="bd">
+        <h3>Modern Premium</h3>
+        <p class="desc">Bold and high-end. A dark canvas with a vivid heartbeat-red accent, glowing gradients, glass cards and a geometric display font. Signals a top-tier specialist.</p>
+        <div class="best"><b>Best for:</b> standing out and signalling a premium, modern practice.</div>
+        <a class="open" href="modern-premium.html">Open Option C →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="shared">
+    <h2>What every version includes</h2>
+    <p>The content is identical across all three, so the client is choosing a <i>look</i>, not a feature set.</p>
+    <div class="grid2">
+      <div>
+        <h4>📄 Homepage sections</h4>
+        <ul>
+          <li>Hero — credentials-led, with photo &amp; clear call-to-action</li>
+          <li>Trust stats — 18+ years · 5.0★ · 40+ reviews · DM U.N. Mehta</li>
+          <li>About Dr. Sandarbh Patel</li>
+          <li>Conditions · Diagnostics · Procedures (tabbed)</li>
+          <li>Why choose Aaradhya</li>
+          <li>Real 5.0★ Google patient reviews</li>
+          <li>Heart-health tips · Visit &amp; map · Appointment form</li>
+        </ul>
+      </div>
+      <div>
+        <h4>⭐ Built-in advantages over competitors</h4>
+        <ul>
+          <li class="x"><b>English ⇄ Gujarati toggle</b> — no rival clinic offers this</li>
+          <li class="x"><b>Real Google reviews</b> woven in (Dr. Patel's 5.0★)</li>
+          <li class="x"><b>WhatsApp + click-to-call</b> everywhere (matches how patients already reach him)</li>
+          <li class="x"><b>Sticky mobile action bar</b> — call / WhatsApp / book</li>
+          <li class="x"><b>Accessibility</b> — large type &amp; high contrast for older patients</li>
+          <li class="x"><b>Emergency guidance</b> (call 108) for trust &amp; safety</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>Note for the client meeting:</b> these are pitch mockups. The doctor's photo, clinic interior images, the exact public phone/WhatsApp number, and precise daily timings are placeholders to confirm. Credentials, address, the 5.0★ rating and the patient reviews shown are real, pulled from public records and Google.
+  </div>
+</div>
+
+<footer>Prepared for the client pitch · Aaradhya Heart Care · 2026</footer>
+</body>
+</html>
